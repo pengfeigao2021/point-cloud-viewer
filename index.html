@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>3D Point Cloud Viz</title>
+		<style>
+			body { margin: 0; }
+		</style>
+	</head>
+	<body>
+		<script src="js/three.js"></script>
+		<script src="js/view3d.js" type="module"></script>
+		<script type="module">
+            import { view3draw, view3draw_orbit } from './js/view3d.js';
+            var path = './3dmodel.ply';
+            view3draw_orbit(path);
+            
+		</script>
+	</body>
+</html>
